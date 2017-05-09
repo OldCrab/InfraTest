@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonIntroductionViewController" customModule="InfraTest" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="R9x-aT-AiW" id="jfm-td-UVq"/>
+                <outlet property="skipButton" destination="iUl-oe-axZ" id="Uq3-lD-8E4"/>
+                <outlet property="titleUnderImage" destination="DMo-Qv-tWs" id="EPm-nE-Pzv"/>
+                <outlet property="view" destination="gDL-p3-udn" id="qDC-fs-dUd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gDL-p3-udn">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFx-rN-4fA">
+                    <rect key="frame" x="37.5" y="225.5" width="300" height="216"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example" translatesAutoresizingMaskIntoConstraints="NO" id="R9x-aT-AiW">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="187"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-Qv-tWs">
+                            <rect key="frame" x="0.0" y="195" width="300" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="DMo-Qv-tWs" secondAttribute="bottom" id="IEH-zH-Gyx"/>
+                        <constraint firstAttribute="trailing" secondItem="DMo-Qv-tWs" secondAttribute="trailing" id="SOW-6y-1qj"/>
+                        <constraint firstItem="DMo-Qv-tWs" firstAttribute="leading" secondItem="yFx-rN-4fA" secondAttribute="leading" id="ZXD-BW-VXR"/>
+                        <constraint firstItem="R9x-aT-AiW" firstAttribute="leading" secondItem="yFx-rN-4fA" secondAttribute="leading" id="coh-Ta-c5F"/>
+                        <constraint firstItem="R9x-aT-AiW" firstAttribute="top" secondItem="yFx-rN-4fA" secondAttribute="top" id="dVs-Ek-wj8"/>
+                        <constraint firstAttribute="trailing" secondItem="R9x-aT-AiW" secondAttribute="trailing" id="x61-YK-nac"/>
+                        <constraint firstItem="DMo-Qv-tWs" firstAttribute="top" secondItem="R9x-aT-AiW" secondAttribute="bottom" constant="8" id="xLl-l9-VoI"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUl-oe-axZ">
+                    <rect key="frame" x="156.5" y="607" width="61" height="30"/>
+                    <state key="normal" title="Понятно"/>
+                    <connections>
+                        <action selector="startMainPart" destination="-1" eventType="touchUpInside" id="KZX-6J-YT3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yFx-rN-4fA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gDL-p3-udn" secondAttribute="leading" id="93z-0u-N2b"/>
+                <constraint firstItem="iUl-oe-axZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="yFx-rN-4fA" secondAttribute="bottom" id="FYn-P5-X22"/>
+                <constraint firstItem="yFx-rN-4fA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gDL-p3-udn" secondAttribute="top" id="Hhh-3a-ZG6"/>
+                <constraint firstItem="yFx-rN-4fA" firstAttribute="centerX" secondItem="gDL-p3-udn" secondAttribute="centerX" id="LIc-81-FJw"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yFx-rN-4fA" secondAttribute="trailing" id="bM4-Wp-hhw"/>
+                <constraint firstItem="iUl-oe-axZ" firstAttribute="centerX" secondItem="gDL-p3-udn" secondAttribute="centerX" id="c84-eT-gyz"/>
+                <constraint firstItem="yFx-rN-4fA" firstAttribute="centerY" secondItem="gDL-p3-udn" secondAttribute="centerY" id="iLa-xC-zZK"/>
+                <constraint firstAttribute="bottom" secondItem="iUl-oe-axZ" secondAttribute="bottom" constant="30" id="zfX-Hi-mik"/>
+            </constraints>
+            <point key="canvasLocation" x="108.5" y="222.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="example" width="300" height="187"/>
+    </resources>
+</document>
